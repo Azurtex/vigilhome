@@ -19,7 +19,10 @@ namespace vigilhome
 
         private void frmHandicap_Load(object sender, EventArgs e)
         {
-            BackColor = Color.Purple;
+            if (txtEntry.Text == null)
+            {
+                btnValidate.Enabled = false;
+            }
         }
     }
 }
